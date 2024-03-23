@@ -2,7 +2,7 @@ import { z, defineCollection } from 'astro:content';
 
 const postSchema = z.object({
     draft: z.boolean().default(false),
-    date: z.date().transform((str: string) => new Date(str)),
+    date: z.date().transform((str) => new Date(str)),
     title: z.string(),
     tags: z.array(z.string()).optional(),
     author: z.string(),

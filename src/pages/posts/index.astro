@@ -2,10 +2,10 @@
 import { getCollection } from "astro:content";
 import App from "../../layouts/app.layout.astro";
 import type { PostSchema } from "../../content/config";
-const posts: PostSchema[] = await getCollection("posts", (post: PostSchema) => {
+
+const posts = await getCollection("posts", (post) => {
   return import.meta.env.MODE !== "production" || post.data.draft === false;
 });
-console.log(posts);
 ---
 
 <App title="POSTS">
