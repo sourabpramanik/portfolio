@@ -5,11 +5,43 @@
 
 @layer base {
     @font-face {
-        font-family: 'Satoshi';
+        font-family: 'Satoshi-Light';
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(/fonts/Satoshi-Light.woff2) format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Satoshi-Regular';
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url(/fonts/Satoshi-Variable.woff2) format('woff2');
+        src: url(/fonts/Satoshi-Regular.woff2) format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Satoshi-Medium';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(/fonts/Satoshi-Medium.woff2) format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Satoshi-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts/Satoshi-Bold.woff2) format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Satoshi-Black';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(/fonts/Satoshi-Black.woff2) format('woff2');
     }
 
     :root {
