@@ -3,4 +3,21 @@ import App from "../layouts/app.layout.astro";
 import "../styles/globals.css";
 ---
 
-<App />
+<App title="ME">
+  <div class="w-full h-full flex flex-col gap-16 md:gap-24">
+    <h1 class="font-[Syne] font-bold text-4xl md:text-6xl">
+      Hey, I'm <span class="text-primary">Sourab</span><br /><span
+        class="text-primary">Pramanik</span
+      >
+    </h1>
+    <div class="self-end">
+      <p class="max-w-2xl text-xl md:text-2xl text-muted-foreground">
+        A software developer looking for ways to build something new out of
+        something broken. Writes articles on new and efficient ways to build
+        products using new technologies. And contributes to the open-source
+        projects without any motivation at all, just one goal to make something
+        good!
+      </p>
+    </div>
+  </div>
+</App>
