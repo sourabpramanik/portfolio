@@ -17,6 +17,10 @@ const links = [
     name: "WORK",
     href: "/work",
   },
+  {
+    name: "PROJECTS",
+    href: "/projects",
+  },
 ];
 
 console.log(currentPath);
@@ -29,12 +33,11 @@ console.log(currentPath);
     {
       links.map(({ name, href }) => (
         <li
-          class={`font-['Syne'] text-sm md:text-md ${currentPath.includes(name.toLowerCase()) && "text-primary font-semibold"}`}
+          class={`font-['Syne'] text-sm md:text-md ${currentPath.includes(name.toLowerCase()) && "text-primary font-semibold"} ${currentPath === "/" && name === "ME" && "text-primary font-semibold"}`}
         >
           <a href={href}> {name} </a>
         </li>
       ))
     }
-
   </ul>
 </nav>
