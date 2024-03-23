@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Satoshi';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/Satoshi-Variable.woff2) format('woff2');
+    }
+
+    :root {
+        --background: 0 0% 9%;
+        --foreground: 0 0% 90%;
+        --card: 0 0% 0%;
+        --card-foreground: 0 0% 90%;
+        --popover: 0 0% 9%;
+        --popover-foreground: 0 0% 90%;
+        --primary: 0 72% 49%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 0 0% 12%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: -38 10% 15%;
+        --muted-foreground: 0 0% 60%;
+        --accent: -38 10% 15%;
+        --accent-foreground: 0 0% 90%;
+        --destructive: 0 50% 30%;
+        --destructive-foreground: 0 0% 90%;
+        --border: 0 20% 18%;
+        --input: 0 20% 18%;
+        --ring: 0 72% 49%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}

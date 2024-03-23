@@ -1,8 +1,17 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 import react from "@astrojs/react";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()]
+  integrations: [
+    react({
+      include: ["**/react/*"],
+    }),
+    tailwind({
+      applyBaseStyles: false,
+      configFile: "./tailwind.config.mjs",
+    }),
+  ],
 });
