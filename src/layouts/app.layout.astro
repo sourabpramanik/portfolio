@@ -1,0 +1,61 @@
+---
+const { title } = Astro.props;
+const currentPath = Astro.url.pathname;
+const links = [
+  {
+    name: "ME",
+    href: "/",
+  },
+  {
+    name: "POSTS",
+    href: "/posts",
+  },
+  {
+    name: "REACH OUT",
+    href: "/reach-out",
+  },
+  {
+    name: "WORK",
+    href: "/work",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="max-w-[1440px] w-full mx-auto relative">
+    <header
+      class="absolute px-8 flex h-24 w-full items-center justify-center md:justify-end"
+    >
+      <nav
+        class="bg-secondary/70 text-secondary-foreground px-6 py-2 backdrop-blur-2xl rounded-md"
+      >
+        <ul class="flex items-center gap-7">
+          {
+            links.map(({ name, href }) => (
+              <li
+                class={`font-['Syne'] text-sm md:text-md ${currentPath === href && "text-primary font-semibold"}`}
+              >
+                <a href={href}> {name} </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </header>
+    <h1>{title}</h1>
+    <main class="px-4 pt-20">
+      <slot />
+      <!-- your content is injected here -->
+    </main>
+  </body>
+</html>
