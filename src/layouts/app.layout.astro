@@ -20,13 +20,15 @@ const { title } = Astro.props;
   </head>
   <body class="max-w-[1440px] w-full mx-auto relative">
     <header class="fixed px-8 flex h-24 w-full items-center justify-between">
-      <Image
-        src={logo}
-        alt="logo"
-        width="40"
-        height="40"
-        class="w-8 h-8 md:w-10 md:h-10"
-      />
+      <a href="/">
+        <Image
+          src={logo}
+          alt="logo"
+          width="40"
+          height="40"
+          class="w-8 h-8 md:w-10 md:h-10"
+        />
+      </a>
       <div class="hidden md:block">
         <Nav />
       </div>
