@@ -1,0 +1,37 @@
+---
+const currentPath = Astro.url.pathname;
+const links = [
+  {
+    name: "ME",
+    href: "/",
+  },
+  {
+    name: "POSTS",
+    href: "/posts",
+  },
+  {
+    name: "REACH OUT",
+    href: "/reach-out",
+  },
+  {
+    name: "WORK",
+    href: "/work",
+  },
+];
+---
+
+<nav
+  class="bg-secondary/70 text-secondary-foreground px-6 py-4 backdrop-blur-2xl rounded-md"
+>
+  <ul class="flex items-center gap-7 justify-between">
+    {
+      links.map(({ name, href }) => (
+        <li
+          class={`font-['Syne'] text-sm md:text-md ${currentPath === href && "text-primary font-semibold"}`}
+        >
+          <a href={href}> {name} </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
