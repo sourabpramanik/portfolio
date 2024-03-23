@@ -1,0 +1,44 @@
+---
+import App from "../../../layouts/app.layout.astro";
+import { CollectionEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts.map((post) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+      props: {
+        post,
+      },
+    };
+  });
+}
+
+interface Props {
+  post: CollectionEntry<"posts">;
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<App title="POSTS">
+  <h1 class="font-[Syne] font-bold text-4xl md:text-6xl text-primary">
+    {post.data.title}<span class="text-foreground">.</span>
+  </h1>
+  <div class="markdown max-w-3xl mx-auto relative">
+    <Content />
+  </div>
+  <ul
+    class="flex items-center gap-4 text-sm uppercase text-muted-foreground font-[Satoshi-medium] border-t border-b border-muted w-full max-w-3xl justify-evenly py-4 mx-auto"
+  >
+    {
+      post.data.tags?.map((tag: string) => (
+        <li class="bg-secondary px-2 rounded-sm">{tag}</li>
+      ))
+    }
+  </ul>
+</App>

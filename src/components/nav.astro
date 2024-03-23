@@ -18,6 +18,8 @@ const links = [
     href: "/work",
   },
 ];
+
+console.log(currentPath);
 ---
 
 <nav
@@ -27,7 +29,7 @@ const links = [
     {
       links.map(({ name, href }) => (
         <li
-          class={`font-['Syne'] text-sm md:text-md ${currentPath === href && "text-primary font-semibold"}`}
+          class={`font-['Syne'] text-sm md:text-md ${currentPath.includes(href) && "text-primary font-semibold"}`}
         >
           <a href={href}> {name} </a>
         </li>

@@ -18,7 +18,9 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="max-w-[1440px] w-full mx-auto relative font-[Satoshi-Regular]">
-    <header class="fixed px-8 flex h-24 w-full items-center justify-between">
+    <header
+      class="fixed px-8 flex h-24 w-full items-center justify-between z-50"
+    >
       <a href="/">
         <Image
           src={"/images/logo.svg"}
@@ -36,7 +38,7 @@ const { title } = Astro.props;
       <slot />
     </main>
     <div
-      class="fixed bottom-6 w-full flex md:hidden items-center justify-center px-6"
+      class="fixed bottom-6 w-full flex md:hidden items-center justify-center px-6 z-50"
     >
       <Nav />
     </div>
