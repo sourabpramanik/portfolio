@@ -29,11 +29,12 @@ console.log(currentPath);
     {
       links.map(({ name, href }) => (
         <li
-          class={`font-['Syne'] text-sm md:text-md ${currentPath.includes(href) && "text-primary font-semibold"}`}
+          class={`font-['Syne'] text-sm md:text-md ${currentPath.includes(name.toLowerCase()) && "text-primary font-semibold"}`}
         >
           <a href={href}> {name} </a>
         </li>
       ))
     }
+
   </ul>
 </nav>
