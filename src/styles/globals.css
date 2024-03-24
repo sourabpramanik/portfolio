@@ -129,33 +129,33 @@
         display: inline-block
     }
 
-    @media screen and (max-width: 448px) {
+    @media screen and (max-width: 560px) {
         .markdown {
-            padding: 28px 0px;
-            gap: 16px;
+            padding: 24px 0px;
+            gap: 20px;
         }
 
         .markdown h2 {
-            font-size: 24px;
+            font-size: 28px;
             margin-top: 18px;
         }
 
         .markdown h3 {
-            font-size: 18px;
+            font-size: 22px;
             margin-top: 14px;
         }
 
         .markdown p {
-            font-size: 14px;
+            font-size: 18px;
         }
 
         .markdown code {
-            font-size: 12px;
+            font-size: 14px;
         }
 
         .markdown>.astro-code code {
 
-            font-size: 12px;
+            font-size: 14px;
         }
 
         .markdown>.astro-code code>span {
