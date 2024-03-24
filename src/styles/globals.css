@@ -104,6 +104,11 @@
         font-family: "Satoshi-Regular"
     }
 
+    .markdown a {
+        color: hsl(var(--primary));
+        border-bottom: thin solid hsl(var(--primary))
+    }
+
     .markdown img {
         margin: 18px 0px;
         border-radius: 10px;
