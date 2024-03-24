@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import App from "../../layouts/app.layout.astro";
-import type { PostSchema } from "../../content/config";
 
 const posts = await getCollection("posts", (post) => {
   return import.meta.env.MODE !== "production" || post.data.draft === false;
