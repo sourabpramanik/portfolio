@@ -10,7 +10,7 @@ import projects from "../data/projects.json";
   <div class="grid mt-6 md:mt-20 grid-cols-1 md:grid-cols-3 gap-4 md:gap-7">
     {
       projects.map((project) => (
-        <div class="border-2 border-primary rounded-md px-3 py-4 space-y-4 opacity-50 hover:opacity-100 ease-linear duration-500">
+        <div class="border border-primary rounded-lg px-3 py-4 space-y-4 opacity-100 md:opacity-50 hover:opacity-100 ease-linear duration-500">
           <h4 class="font-[Syne] font-medium text-lg">{project.title}</h4>
           <p class="font-[Satoshi-regular] text-sm">{project.description}</p>
           <div class="flex items-end justify-between">
