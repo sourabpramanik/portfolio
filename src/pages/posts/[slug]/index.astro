@@ -29,11 +29,11 @@ const { Content } = await post.render();
   <h1 class="font-[Syne] font-bold text-4xl md:text-6xl text-primary">
     {post.data.title}<span class="text-foreground">.</span>
   </h1>
-  <div class="markdown md:max-w-3xl mx-auto relative">
+  <div class="markdown w-full max-w-full md:max-w-3xl md:mx-auto relative">
     <Content />
   </div>
   <ul
-    class="flex items-center gap-4 text-sm uppercase text-muted-foreground font-[Satoshi-medium] border-t border-b border-muted w-full md:max-w-3xl justify-evenly py-4 mx-auto"
+    class="flex flex-wrap items-center justify-between gap-4 text-sm uppercase text-muted-foreground font-[Satoshi-medium] border-t border-b border-muted w-full md:max-w-3xl justify-evenly py-4 mx-auto"
   >
     {
       post.data.tags?.map((tag: string) => (
