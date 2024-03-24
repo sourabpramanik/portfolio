@@ -15,7 +15,7 @@ share:
 ---
 This two-part article covers how we can build an Issue tracking application using React for the frontend, and [Shuttle](https://www.shuttle.rs/) and [Actix Web](https://actix.rs/) for the backend. It also uses [Clerk](https://clerk.com/) for authentication in the frontend and protecting the Rest APIs in the backend.
 
-This article covers the Rust backend, and the [second part](https://www.shuttle.rs/blog/2024/02/13/clerk-in-react) covers the React frontend.
+This article covers the Rust backend, and the [second part](/posts/clerk-in-react-part-two) covers the React frontend.
 
 Here is the [source code](https://github.com/sourabpramanik/issue-tracker) of the complete project if you want to follow along, and a link to the [demo](https://issue-tracker.shuttleapp.rs/).
 
@@ -477,4 +477,4 @@ One important thing to notice is that this piece of code
 
 is going the serve the static pages of the frontend application located in the `./frontend/dist` directory whenever we build our **Vite** application, and this final output is optimized for production.
 
-Follow along to [part 2](https://www.shuttle.rs/blog/2024/02/13/clerk-in-react) where we build the frontend and deploy.
+Follow along to [part 2](/posts/clerk-in-react-part-two) where we build the frontend and deploy.
