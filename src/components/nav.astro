@@ -31,7 +31,7 @@ const links = [
     {
       links.map(({ name, href }) => (
         <li
-          class={`font-['Syne'] text-sm md:text-md ${currentPath.includes(name.toLowerCase()) && "text-primary font-semibold"} ${currentPath === "/" && name === "ME" && "text-primary font-semibold"}`}
+          class={`font-['Syne'] text-sm md:text-md ${currentPath.replaceAll("-", " ").includes(name.toLowerCase()) && "text-primary font-semibold"} ${currentPath === "/" && name === "ME" && "text-primary font-semibold"}`}
         >
           <a href={href}> {name} </a>
         </li>
