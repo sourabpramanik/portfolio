@@ -8,7 +8,7 @@ author: Sourab Pramanik & Shuttle team
 tags: [rust, actix, auth, clerk, guide]
 
 share:
-  image: https://res.cloudinary.com/jlengstorf/image/upload/v1674096555/blog/eat-cheese-every-day.jpg
+  image: https://someimage.jpg
   title: "Using Clerk authentication in Rust (Part 1)"
   description: "Part 1: Building a Rust Actix Web backend with Clerk authentication."
 

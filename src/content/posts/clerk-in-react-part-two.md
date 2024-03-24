@@ -8,7 +8,7 @@ author: Sourab Pramanik & Shuttle team
 tags: [react, vite, auth, clerk, guide]
 
 share:
-  image: https://res.cloudinary.com/jlengstorf/image/upload/v1674096555/blog/eat-cheese-every-day.jpg
+  image: https://someimage.jpg
   title: "Using Clerk authentication in React (Part 2)"
   description: "Part 2: Building a Rust Actix Web backend with Clerk authentication."
 
