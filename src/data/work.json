@@ -1,0 +1,28 @@
+[
+    {
+        "organization": "Updot",
+        "url": "https://updot.co",
+        "years": "2022-Present",
+        "roles": [
+            {
+                "role": "Front-End Engineer",
+                "description": "In 2022, I started at Updot as a front-end developer. I was mostly working on React, and NextJS applications, integrating Rest APIs, building animation-heavy modern-looking web apps, improving SEO and accessibility, and writing tests. Decoupling an old Drupal website and moving to NextJS was very challenging as it was a revamp but all the business logic should be intact so that the existing customer base can get along with the new development seamlessly and should handle the huge traffic."
+            },
+            {
+                "role": "Software Engineer(Full-Stack)",
+                "description": "In 2023, I got promoted to the Software Engineer role, and now along with working on the front-end applications as I did in my previous role, I also started working on the back-end applications, building SDKs and API, and also doing a lot of DevOps work like creating CI/CD pipelines, writing automated tests, using docker to compose parts of an application, deploying on cloud servers, and lot more creative development work. Leading the development of a new Saas application crafted using Svelte and Rust."
+            }
+        ]
+    },
+    {
+        "organization": "Upwork",
+        "url": "https://www.upwork.com/",
+        "years": "2020-Present",
+        "roles": [
+            {
+                "role": "Freelance Full-Stack Developer",
+                "description": "In 2020, I started freelancing with little knowledge I have had in building we application. I was mostly working with startups and recently funded companies how wanted to ship their MVP as soon as possible, and because of that I gotten used working long long hours at night as most of the clients were from Europe. Till this date I work as a freelancer as it become one of my side hustle and I get to explore new technologies work with great minds. I also lead a team of 5 in building an ecommerce website using GatsbyJS, Node, Stripe and Strapi."
+            }
+        ]
+    }
+]
