@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Upstash ratelimit SDK for Rust",
+        "description": "Ported the Upstash official rate limit SDK written in TypeScript to Rust",
+        "tools": [
+            "/images/lua.svg",
+            "/images/rust.svg"
+        ],
+        "url": "https://crates.io/crates/upstash-ratelimit-rs"
+    },
+    {
+        "title": "Issue tracker",
+        "description": "Simple issue tracking application protected with Clerk Auth",
+        "tools": [
+            "/images/react.svg",
+            "/images/rust.svg"
+        ],
+        "url": "https://issue-tracker.shuttleapp.rs/"
+    }
+]
